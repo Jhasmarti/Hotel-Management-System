@@ -74,14 +74,3 @@ CREATE TABLE laundary (
     item_name VARCHAR(100),
     price_per_cloth INT
 );
-
-
-
-
-
-
-
-
-
-
-
