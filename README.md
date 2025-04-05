@@ -36,6 +36,14 @@ It’s a simple yet functional management system meant for small-scale hotels to
 
 ---
 
+
+
+## 🚀 How to Run
+pip install mysql-connector-python pandas
+### mydb = con.connect(user='root', password='1234567890', host='localhost', database='hotel')
+python hotel_management.py
+
+
 ## 🗃 Database Setup
 
 You’ll need to create a MySQL database named `hotel` with the following tables:
@@ -49,10 +57,30 @@ CREATE TABLE custdata (
     outdate DATE
 );
 
-## 🚀 How to Run
-pip install mysql-connector-python pandas
-### mydb = con.connect(user='root', password='1234567890', host='localhost', database='hotel')
-python hotel_management.py
+CREATE TABLE roomtype (
+    room_id INT PRIMARY KEY,
+    room_type VARCHAR(50),
+    price_per_night INT
+);
+
+CREATE TABLE restaurent (
+    item_id INT PRIMARY KEY,
+    item_name VARCHAR(100),
+    price INT
+);
+
+CREATE TABLE laundary (
+    item_id INT PRIMARY KEY,
+    item_name VARCHAR(100),
+    price_per_cloth INT
+);
+
+
+
+
+
+
+
 
 
 
